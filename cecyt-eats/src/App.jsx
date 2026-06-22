@@ -24,13 +24,9 @@ function App() {
   useEffect(() => {
   const sesionGuardada = localStorage.getItem('usuarioActivo');
 
-  if (
-    sesionGuardada &&
-    sesionGuardada !== 'undefined' &&
-    sesionGuardada !== 'null'
-  ) {
-    try {
-      const usuario = JSON.parse(sesionGuardada);
+  
+    if (sesionGuardada){
+      const usuario= JSON.parse(sesionGuardada);
       setUsuarioActivo(usuario);
 
       if (usuario.rol === 'administrador') {
@@ -38,11 +34,7 @@ function App() {
       } else {
         setPantallaActual('catalogo');
       }
-    } catch (error) {
-      console.error('Error al leer la sesión:', error);
-      localStorage.removeItem('usuarioActivo');
     }
-  }
 }, []);
   
   // ── MANEJO DE SESIÓN ────────────────────────────────────────────── 
