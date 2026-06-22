@@ -1,0 +1,203 @@
+/* --- CONFIGURACIÓN GENERAL --- */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: Arial, sans-serif;
+  background:#f3f3f3;
+}
+
+/* --- BARRA DE NAVEGACIÓN --- */
+
+.barra-navegacion{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:25px 50px;
+  background:white;
+}
+
+.logotipo{
+  display:flex;
+  align-items:center;
+}
+
+.texto-logo{
+  font-size:42px;
+  font-weight:bold;
+  color:#0c5f57;
+}
+
+.resalte-logo{
+  color:#69c8b7;
+}
+
+.botones-navegacion{
+  display:flex;
+  gap:15px;
+}
+
+.botones-navegacion button{
+  background:#69c8b7;
+  border:none;
+  padding:15px 25px;
+  border-radius:25px;
+  font-size:18px;
+  font-weight:bold;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.botones-navegacion button:hover{
+  background:#53b8a6;
+}
+
+.btn-entrar{
+  color:black;
+}
+
+.btn-registrarme{
+  color:black;
+}
+
+/* --- SECCIÓN HERO --- */
+
+.seccion-hero{
+  height:650px;
+  background-image:url("https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1600");
+  background-size:cover;
+  background-position:center;
+}
+
+.capa-oscura{
+  width:100%;
+  height:100%;
+  background:rgba(255,255,255,.6);
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.contenido-hero h1{
+  color:#0b7b61;
+  font-size:70px;
+}
+
+.contenido-hero p{
+  margin-top:20px;
+  font-size:40px;
+  color:#222;
+}
+
+.btn-ver-menu{
+  margin-top:40px;
+  background:#69c8b7;
+  border:none;
+  border-radius:25px;
+  padding:18px 35px;
+  font-size:28px;
+  font-weight:bold;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.btn-ver-menu:hover{
+  background:#53b8a6;
+}
+
+/* --- SECCIÓN INFORMATIVA --- */
+
+.seccion-informativa{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  padding:70px 20px;
+  background:#f3f3f3;
+  flex-wrap:wrap;
+}
+
+.seccion-informativa h2{
+  width:100%;
+  text-align:center;
+  margin-bottom:40px;
+  font-size:40px;
+}
+
+.cuadricula-info{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  width:100%;
+}
+
+.tarjeta-info{
+  width:300px;
+  text-align:center;
+  padding:20px;
+  border-right:1px solid #cfcfcf;
+}
+
+.tarjeta-info:last-child{
+  border-right:none;
+}
+
+.icono-info{
+  width:90px;
+  height:90px;
+  margin:auto;
+  border-radius:50%;
+  background:#69c8b7;
+  color:white;
+  font-size:40px;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.tarjeta-info h3{
+  margin-top:20px;
+  font-size:35px;
+}
+
+.tarjeta-info p{
+  margin-top:15px;
+  font-size:20px;
+  color:#444;
+}
+
+/* --- PIE DE PÁGINA --- */
+
+.pie-pagina{
+  background:#0c5f57;
+  color:white;
+  padding:30px;
+}
+
+.contenido-pie{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  max-width:1200px;
+  margin:auto;
+}
+
+.enlaces-pie{
+  display:flex;
+  gap:20px;
+}
+
+.enlaces-pie a{
+  color:white;
+  text-decoration:none;
+}
+
+.enlaces-pie a:hover{
+  text-decoration:underline;
+}

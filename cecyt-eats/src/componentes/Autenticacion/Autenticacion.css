@@ -1,0 +1,122 @@
+/* ── TARJETA CONTENEDORA ── */ 
+.tarjeta-auth { 
+  background-color: white; 
+  max-width: 400px; 
+  margin: 40px auto; 
+  padding: 30px; 
+  border-radius: 10px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+} 
+  
+.tarjeta-auth h2 { 
+   color: #14532d;
+  font-weight: 700;
+  text-align: center; 
+  margin-bottom: 5px; 
+} 
+  
+.subtitulo-auth { 
+  color: #666; 
+  font-size: 14px; 
+  text-align: center; 
+  margin-bottom: 25px; 
+} 
+  
+/* ── CAMPOS DEL FORMULARIO ── */ 
+.grupo-campo { 
+  margin-bottom: 18px; 
+  display: flex; 
+  flex-direction: column; 
+} 
+  
+.grupo-campo label { 
+  font-size: 14px; 
+  font-weight: 600; 
+  margin-bottom: 6px; 
+  color: #333; 
+} 
+  
+.grupo-campo input, 
+.grupo-campo select { 
+  padding: 10px; 
+  font-size: 15px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  outline: none; 
+  transition: 0.2s; 
+} 
+  
+.grupo-campo input:focus, 
+.grupo-campo select:focus { 
+  border-color: #00509d; 
+} 
+  
+/* ── ENLACE DE CONTRASEÑA OLVIDADA ── */ 
+.enlaces-ux { 
+  display: flex; 
+  justify-content: flex-end; 
+  margin-bottom: 15px; 
+} 
+  
+.olvide-contrasena { 
+  font-size: 13px; 
+  color: #00509d; 
+  cursor: pointer; 
+} 
+  
+.olvide-contrasena:hover { text-decoration: underline; } 
+  
+/* ── MENSAJES DE VALIDACIÓN ── */ 
+.mensaje-error { 
+  color: #d9534f; 
+  background-color: #fdf2f2; 
+  padding: 8px; 
+  border-radius: 4px; 
+  font-size: 13px; 
+  font-weight: bold; 
+  margin-bottom: 15px; 
+  border-left: 4px solid #d9534f; 
+} 
+  
+.mensaje-exito { 
+  color: #2b7513; 
+  background-color: #f2fdf2; 
+  padding: 8px; 
+  border-radius: 4px; 
+  font-size: 13px; 
+  font-weight: bold; 
+  margin-bottom: 15px; 
+  border-left: 4px solid #2b7513; 
+} 
+  
+/* ── BOTÓN PRINCIPAL ── */ 
+.btn-auth { 
+  width: 100%; 
+   background-color: #198754;
+  color: white; 
+  padding: 12px; 
+  font-size: 16px; 
+  font-weight: bold; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  transition: 0.2s; 
+} 
+  
+.btn-auth:hover { background-color: #002244; } 
+  
+/* ── TEXTO DE CAMBIO DE PANTALLA ── */ 
+.texto-cambio-auth { 
+  text-align: center; 
+  margin-top: 20px; 
+  font-size: 14px; 
+  color: #444; 
+} 
+  
+.texto-cambio-auth span { 
+  color: #00509d; 
+  font-weight: bold; 
+  cursor: pointer; 
+} 
+  
+.texto-cambio-auth span:hover { text-decoration: underline; } 
